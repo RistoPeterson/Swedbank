@@ -1,0 +1,178 @@
+button[type=button] {
+  margin-top: 20px;
+  width: 20%;
+  min-height: 45px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-family: RobotoMedium,Helvetica,Arial,sans-serif;
+  border-radius: 3px;
+  line-height: 18px;
+  transition color 0.3s ease-out;
+  background: #ff5f00;
+  border: 1px solid;
+  text-align: center;
+  padding: 13px 15px;
+}
+
+h1 {
+ color: #FB4F00;
+ font-size: 32px;
+ font-family: HeadlineBlack,Helvetica,Arial,sans-serif;
+ margin: 5px;
+}
+
+h2 {
+    color: #512B2B;
+    font-size: 26px;
+    font-family: HeadlineBlack,Helvetica,Arial,sans-serif;
+
+}
+
+h4 {
+    color: #512B2B;
+    font-size: 15px;
+    font-family: RobotoBold,Helvetica,Arial,sans-serif;
+}
+
+em {
+    color: #FB4F00;
+    font-size: 17px;
+    font-family: RobotoMedium,Helvetica,Arial,sans-serif;
+}
+p {
+    color: #512B2B;
+    font-size: 17px;
+    font-family: RobotoMedium,Helvetica,Arial,sans-serif;
+}
+
+p.disclaimer {
+    color: #896f6f;
+    font-size: 13px;
+    font-family: RobotoRegular,Helvetica,Arial,sans-serif;
+
+}
+
+ul li {
+    color: #512B2B;
+    font-size: 17px;
+    font-family: RobotoMedium,Helvetica,Arial,sans-serif;
+    padding: 0, 0, 0, 15px;
+
+}
+
+label {
+    margin: 5px;
+    color: 896f6f;
+    font-size: 15px;
+    font-family: RobotoRegular,Helvetica,Arial,sans-serif;
+}
+
+div.flex-container {
+  background-color: rgba(254,236,190,.5)
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+span {
+    color: #512B2B;
+    font-size: 17px;
+    font-family: RobotoMedium,Helvetica,Arial,sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article {
+    margin: 5px;
+    justify-content: start;
+}
+
+img.container-img {
+    max-width: 300px;
+    margin: 15px;
+    align-self: flex-end;
+}
+
+.form-check {
+  display: flex; /* Use flexbox to display the labels in a row */
+  align-items: center; /* Center the items vertically */
+  margin-bottom: 10px; /* Add some spacing between the form-check elements */
+}
+
+.form-check-input {
+  display: none;
+}
+
+/* Style for the custom radio button */
+.form-check-label::before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #bcd8db;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+
+.form-check-input:checked + .form-check-label::before {
+      font-size: 0;
+      background-color: #ff5f00;
+      width: 22px;
+      height: 22px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      top: 3px;
+      left: 3px;
+}
+
+
+.form-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+select {
+    background-color: #ecf9f3;
+    max-width: 300px;
+    padding-right: 30px;
+    max-height: 46px;
+    min-height: 46px;
+    margin-bottom: 10px;
+}
+
+input[type=text] {
+    border: 1px solid #bcd8db;
+    background-color: #fff;
+    color: #512B2B;
+    padding: 13px 10px 13px 10px;
+    margin-bottom: 10px;
+}
+
+#thankYouMessage {
+    color: #512B2B;
+    font-size: 17px;
+    font-family: RobotoMedium,Helvetica,Arial,sans-serif;
+    padding: 0, 0, 0, 15px;
+}
+
+
+
+
+
+
+
+
+
+

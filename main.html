@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Swedbank App</title>
+</head>
+<body>
+
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid navbar-container">
+    <a class="logo">
+      <img alt="Swedbank logo" src="https://swedbank.ee/webjars/webcomponents/2.9.0/assets/images/swedbank-logo.svg" width="140">
+    </a>
+    <span>Sisenen</span>
+  </div>
+</nav>
+
+
+<div class="flex-container">
+    <div class="row">
+        <article>
+            <h1>Autoliising</h1>
+            <h2>Sinu uus auto võib olla samm jätkusuutlikuma elustiili poole</h2>
+
+            <p>
+                <em>Eripakkumine</em> autodele, mille CO<sub>2</sub> heide on kuni 50 g/km.
+                Kaks esimest aastat on <em>intress 0% + 6 kuu euribor.*</em>
+            </p>
+            <ul>
+                <li>
+                    Liising on hea lahendus, kui plaanid osta uue auto.
+                </li>
+                <li>
+                    Kõik on lihtne ja mugav – taotlusest sõiduki kättesaamiseni.
+                </li>
+                <li>
+                    Taotluse täitmine võtab vaid mõne minuti.
+                </li>
+
+            </ul>
+            <p class="disclaimer">
+                    * Eripakkumine kehtib kuni 30.09.2023 esitatud uutele taotlustele.
+                    Intress 0% + 6 kuu euribor kehtib 2 esimest aastat autodele, mille CO<sub>2</sub> heide on kuni 50 g/km,
+                    hiljem rakendub intress 1,49% + 6 kuu euribor. Täpsemad tingimused leiad lehe alt peatükist „Tingimused ja hinnad“.
+            </p>
+        </article>
+        <img src="./uploads/Swed1.jpeg" alt="Image" class="container-img">
+    </div>
+</div>
+
+<article>
+    <h2>Leia sobiv kuumakse</h2>
+    <h4>Autoliisingu kalkulaator</h4>
+</article>
+<form id="form">
+    <div class="question">
+        <label>Sõiduki tüüp</label>
+        <input class="form-check-input" type="radio" id="gridRadios" name="gridRadios" value="Uus" checked>
+        <label class="form-check-label" for="gridRadios">
+            <label>Uus</label>
+            <input class="form-check-input" type="radio" id="gridRadios2" name="gridRadios" value="Uus">
+        </label>
+
+        <input class="form-check-input" type="radio" id="gridRadios1" name="gridRadios" value="Kasutatud" checked>
+        <label class="form-check-label" for="gridRadios1">
+            <label>Kasutatud</label>
+            <input class="form-check-input" type="radio" id="gridRadios55" name="gridRadios" value="Kasutatud">
+        </label>
+    </div>
+
+    <div class="question">
+        <label>Sõiduki hind</label>
+        <input type="text" class="form-control" placeholder="Hind" aria-label="10000">
+    </div>
+    <div class="question">
+    <label class="visually-hidden" for="autoSizingSelect">Laenuperiood</label>
+    <select class="form-select" id="autoSizingSelect">
+        <option selected>Vali</option>
+        <option value="1 aastat">1 aasta</option>
+        <option value="2 aastat">2 aastat</option>
+        <option value="3 aastat">3 aastat</option>
+        <option value="4 aastat">4 aastat</option>
+        <option value="5 aastat">5 aastat</option>
+    </select>
+  </div>
+  <div class="question">
+    <label class="visually-hidden" for="autoSizingSelect">Jääkväärtus</label>
+    <select class="form-select" id="autoSizingSelect1">
+        <option selected>Vali</option>
+        <option value="5%">5%</option>
+        <option value="10%">10%</option>
+        <option value="15%">15%</option>
+        <option value="20%">20%</option>
+        <option value="25%">25%</option>
+        <option value="30%">30%</option>
+    </select>
+  </div>
+</form>
+
+<div class="button-container">
+  <button type="button" id="prevbtn">Tagasi</button>
+  <button type="button" id="nextbtn">Edasi</button>
+  <button type="button" id="submitbtn" class="button">Täidan taotluse</button>
+</div>
+
+<div id="summarySection" style="display: none;">
+    <h1>Kokkuvõte</h1>
+    <ul id="summaryList"></ul>
+</div>
+
+<div id="thankYouMessage" style="display: none;">
+  Täname, et valisite Swedbank Liisingu! Meie haldur võtab teiega ühendust esimesel võimalusel!
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
